@@ -1,0 +1,47 @@
+.org {
+    margin-top: 5%;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+}
+
+.ind {
+    width: 90%;
+    height: 420px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+
+h2 {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.liv {
+    width: 70px;
+    height: 100px;
+    background-color: black;
+    margin-top: 20px;
+    margin-left: 50%;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 67%;
+    height: 30px;
+    /* background-image:  linear-gradient(to bottom, rgb(255, 255, 255), purple);; */
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 20px;
+    /* color: white; */
+    border: 1px solid grey;
+    border-radius: 5px;
+    /* padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px; */
+}
