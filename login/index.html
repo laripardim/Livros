@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">""
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velaris - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body onload="verificaLogin()">
+    <div class="container">
+            <header>
+                <img src="../assets/velaris.png" class="velaris" alt="Velaris Books">
+            </header>
+            <main>
+                <form>
+                    <h1>Bem vindos a Velaris Books</h1>
+                    <input type="text" placeholder="   Nome..." id="nome">
+                    <br>
+                    <br>
+                    <input type="text" placeholder="   Email..." id="email">
+                    <br>
+                    <br>
+                    <input type="password" placeholder="   Senha..." id="senha">
+                    <input type="file" id="foto" hidden>
+                    <img src="../assets/camera.png" alt="Camera" id="camera" width="32" hidden>
+                    <a onclick="cadastrar()">Não possui cadastro? Cadastrar-se</a>
+                    <br>
+                    <button type="button" id="login" onclick="conectar()">Login</button>
+                </form>
+            </main>
+        </div>
+</body>
+<script src="./script.js"></script>
+</html>

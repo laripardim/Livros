@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velaris - Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../global/style.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body onload="load()">
+    <header>
+        <nav>
+            <img src="../assets/velaris.png" class="velaris" alt="Velaris Books">
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="alinhar"><a href="../home/index.html">HOME</a><img class="img" src="../assets/castle.png">
+                </li>
+                <li class="alinhar"><a href="../escreva/index.html">WRITE</a><img class="img"
+                        src="../assets/writing.png"></li>
+                <!-- <li class="alinhar"><a href="../leitura/index.html">READ</a><img class="img"
+                        src="../assets/reading-book.png"></li> -->
+                <li class="alinhar"><a href="../login/index.html" onclick="handleLogoutClick()">LOGOUT</a><img
+                        class="img" src="../assets/sair.png">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main">
+        <br>
+        <img alt="Perfil Books" id="imgUser" width="128">
+        <input type="file" id="foto" hidden>
+        <img src="../assets/camera.png" width="32px" class="margem" alt="" id="camera">
+        <input type="text" id="nomeUser" placeholder="Nome...">
+        <input type="text" id="emailUser" placeholder="Email...">
+        <input type="password" id="pswUser" placeholder="Senha...">
+        <input type="file" id="foto" hidden>
+        <img src="../assets/camera.png" alt="Camera" id="camera" width="32" hidden>
+        <br>
+        <img src="../assets/reload.png" onclick="atualizarDados()"></img>
+    </div>
+    <div class="meio">
+        <h3>LIVROS ADICIONADOS POR ESTA PESSOA</h3>
+        <div class="publi">
+            <div class="livro" id="ex1">
+                <img src="" class="capa" alt="">
+            </div>
+            <div class="livro" id="ex2">
+                <img src="" class="capa" alt="">
+            </div>
+            <div class="livro" id="ex3">
+                <img src="" class="capa" alt="">
+            </div>
+        </div>
+        <div class="publi">
+            <div class="livro" id="ex4">
+                <img src="" class="capa" alt="">
+            </div>
+            <div class="livro" id="ex5">
+                <img src="" class="capa" alt="">
+            </div>
+            <div class="livro" id="ex6">
+                <img src="" class="capa" alt="">
+            </div>
+        </div>
+        <div class="publi">
+            <div class="livro" id="ex7">
+                <img src="" class="capa" alt="">
+            </div>
+            <div class="livro" id="ex8">
+                <img src="" class="capa" alt="">
+            </div>
+            <div class="livro" id="ex9">
+                <img src="" class="capa" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+<script src="../global/script.js"></script>
+
+</html>

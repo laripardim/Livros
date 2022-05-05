@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velaris - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../global/style.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../assets/velaris.png" class="velaris" alt="Velaris Books">
+            <input type="text" id="txtColuna1" onKeyUp="filtrar()" />
+            <div class="lupa">
+                <!-- <img src="../assets/lupa.png" onclick="filtrar()" alt=""> -->
+            </div>
+            </div>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="alinhar"><a href="../perfil/index.html">PROFILE</a><img class="img"
+                        src="../assets/profile.png"></li>
+                <li class="alinhar"><a href="../escreva/index.html">WRITE</a><img class="img"
+                        src="../assets/writing.png"></li>
+                <!-- <li class="alinhar"><a href="../leitura/index.html">READ</a><img class="img" -->
+                        <!-- src="../assets/reading-book.png"></li> -->
+                <li class="alinhar"><a href="../login/index.html" onclick="handleLogoutClick()">LOGOUT</a><img
+                        class="img" src="../assets/sair.png">
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div class="meio" id="divContent">
+        <div class="center">
+            <div class="corpo">
+                <textarea type="text" id="compromisso" cols="30" rows="10" class="meu-coment"></textarea>
+                <img src="../assets/enviar.png" type="button" id="add" width="35" height="35" />
+            </div>
+        </div>
+    </div>
+    <div class="carrossel">
+        <input type="radio" class="tam" name="position" checked />
+        <input type="radio" class="tam" name="position" />
+        <input type="radio" class="tam" name="position" />
+        <input type="radio" class="tam" name="position" />
+        <input type="radio" class="tam" name="position" />
+        <main id="carousel">
+            <div class="item model">
+                <img id="imagem">
+            </div>
+        </main>
+    </div>
+</body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="./script.js"></script>
+<script src="../global/script.js"></script>
+</html>

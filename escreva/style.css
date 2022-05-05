@@ -1,0 +1,118 @@
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
+}
+
+
+.capaLivro{
+    visibility:hidden;
+    display: flex;
+    width: 300px;
+    margin-left: 5px;
+    height: 441px;
+    border: 1px solid rgba(128, 128, 128, 0.479);
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+input, select,textarea {
+    margin-top:3%;
+}
+
+.meio{
+    width: 400px !important;
+}
+
+.adicionar-livro{
+    display:flex;
+    align-items: end;
+}
+.adicionar-livro>img{
+    border: none;
+    margin:0;
+    padding:0;
+}
+
+.upload-cape{ 
+    margin-left:-40px;
+    /* filter: invert(1); */
+}
+
+#caps{
+    width: 250px !important;
+    height: 40px !important;
+    border: 1px solid rgba(128, 128, 128, 0.425);
+    color: -internal-light-dark(black, white);    
+    border-radius: 3px;
+}
+
+
+textarea {
+    resize: none;
+    width: 400px !important;
+    height: 450px !important;
+    border: 1px solid black;
+}
+
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    all: unset; 
+    min-width: 21px;
+    min-height: 45px;
+    margin: 17px;
+    padding: 0px;
+    background-image: 
+    linear-gradient(to top, transparent 0px, transparent 16px, #fff 16px, #fff 26px, transparent 26px, transparent 35px, rgb(100, 70, 182) 35px,rgb(100, 70, 182) 36px,transparent 36px, transparent 40px),
+    linear-gradient(to right, transparent 0px, transparent 10px, rgba(0, 0, 0, 0.979) 10px, rgb(100, 70, 182) 11px, transparent 11px, transparent 21px);
+    transform: rotate(90deg) scale(0.8, 0.9);
+    cursor:pointer;
+}            
+button {
+    margin-top:30px
+}        
+
+@media (max-width: 500px) {
+    .vc {
+        margin-top: 40px;
+        width: 95%;
+        height: 100px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .texto {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer {
+        width: 100%;
+        height: 30px;
+    }
+    
+    h1 {
+        color: aliceblue;
+        font-family: Helvetica, Arial, sans-serif;
+        text-align: center;
+    }
+    
+    h5 {
+        margin-top: 7px;
+    }
+    
+    button {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .oioi {
+        width: 250px;
+        height: 40px;
+        border-radius: 2px;
+    }
+}    

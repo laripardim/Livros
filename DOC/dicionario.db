@@ -1,0 +1,171 @@
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+POST
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+usuario {
+    {
+        nome: "Larissa Ferreira",
+        email: "larissa.ferreira@gmail.com",
+        senha: "81dc9bdb52d04dc20036dbd8313ed055(MD5)",
+        imagem: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fdisney.fandom.com%2Fpt-br%2Fwiki%2FHomem_de_Ferro&psig=AOvVaw0BnJufkZTPRjnDgnCLEF6d&ust=1645538479442000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiyqNT6kPYCFQAAAAAdAAAAABAD",
+    }    
+}
+
+leitura {
+    {
+        id_usuario: 1,
+        nome_livro: "Maldita Realeza",
+        autor_livro: "Meri Schreave",
+    }
+}
+
+livro {
+    {
+        nome_livro: "Maldita Realeza",
+        autor_livro: "Meri Schreave",
+        sinopse: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, enim earum? Dolore atque nemo reiciendis dolores nihil eum earum quos quas non, fugiat, mollitia ea alias explicabo vero. Est, corporis."
+    }
+}
+
+escrita {
+    {
+        id_usuario: 1,
+        nome_livro: "Maldita Realeza",
+        autor_livro: "Meri Schreave",
+        texto_livro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, enim earum? Dolore atque nemo reiciendis dolores nihil eum earum quos quas non, fugiat, mollitia ea alias explicabo vero. Est, corporis."
+    }
+}
+
+comentario {
+    {
+        id_usuario: 1,
+        email: "larissa.ferreira@gmail.com",
+        texto_comentado: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, enim earum? Dolore atque nemo reiciendis dolores nihil eum earum quos quas non, fugiat, mollitia ea alias explicabo vero. Est, corporis."
+        imagem: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fdisney.fandom.com%2Fpt-br%2Fwiki%2FHomem_de_Ferro&psig=AOvVaw0BnJufkZTPRjnDgnCLEF6d&ust=1645538479442000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiyqNT6kPYCFQAAAAAdAAAAABAD",
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+GET
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+usuario {
+    {
+        id_usuario: 1,
+        nome: "Larissa Ferreira",
+        imagem: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fdisney.fandom.com%2Fpt-br%2Fwiki%2FHomem_de_Ferro&psig=AOvVaw0BnJufkZTPRjnDgnCLEF6d&ust=1645538479442000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiyqNT6kPYCFQAAAAAdAAAAABAD",
+    }
+}
+
+leitura {
+    {
+        id_leitura: 1,
+        nome_livro: "Maldita Realeza",
+        id_livro: 1,
+        id_usuario: 1,
+    }
+}
+
+livro {
+    {
+        id_livro: 1,
+        nome_livro: "Maldita Realeza",
+        sinopse: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, enim earum? Dolore atque nemo reiciendis dolores nihil eum earum quos quas non, fugiat, mollitia ea alias explicabo vero. Est, corporis."
+    }
+}
+
+escrita {
+    {
+        id_escrita: 1,
+        id_usuario: 1,
+        nome_livro: "Maldita Realeza",
+        autor_livro: "Meri Schreave",
+        texto_livro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, enim earum? Dolore atque nemo reiciendis dolores nihil eum earum quos quas non, fugiat, mollitia ea alias explicabo vero. Est, corporis."
+        sinopse: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, enim earum? Dolore atque nemo reiciendis dolores nihil eum earum quos quas non, fugiat, mollitia ea alias explicabo vero. Est, corporis."
+    }   
+}
+
+comentario {
+    {
+        id_comentarios: 1,
+        id_usuario: 1,
+        texto_comentado: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, enim earum? Dolore atque nemo reiciendis dolores nihil eum earum quos quas non, fugiat, mollitia ea alias explicabo vero. Est, corporis."
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+PUT
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+usuario {
+    {
+        nome: "Larissa Ferreira",
+        email: "larissa.ferreira@gmail.com",
+        senha: "81dc9bdb52d04dc20036dbd8313ed055",
+        imagem: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fdisney.fandom.com%2Fpt-br%2Fwiki%2FHomem_de_Ferro&psig=AOvVaw0BnJufkZTPRjnDgnCLEF6d&ust=1645538479442000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCLiyqNT6kPYCFQAAAAAdAAAAABAD",
+    }
+}
+
+leitura {
+    {
+        autor_livro: "Meri Schreave",
+        nome_livro:" Maldita Realeza",
+    }
+}
+
+livro {
+    {
+        nome_livro: "Maldita Realeza",
+        autor_livro: "Meri Schreave",
+        sinopse: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, enim earum? Dolore atque nemo reiciendis dolores nihil eum earum quos quas non, fugiat, mollitia ea alias explicabo vero. Est, corporis."
+    }
+}
+
+escrita {
+    {
+        nome_livro: "Maldita Realeza",
+        autor_livro: "Meri Schreave",
+        sinopse: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, enim earum? Dolore atque nemo reiciendis dolores nihil eum earum quos quas non, fugiat, mollitia ea alias explicabo vero. Est, corporis."
+        texto_livro: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, enim earum? Dolore atque nemo reiciendis dolores nihil eum earum quos quas non, fugiat, mollitia ea alias explicabo vero. Est, corporis."
+    }
+}
+
+comentario {
+    {
+        texto_comentado: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, enim earum? Dolore atque nemo reiciendis dolores nihil eum earum quos quas non, fugiat, mollitia ea alias explicabo vero. Est, corporis.",
+    }
+}
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+DELETE
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+usuario {
+    {
+        id_usuario: 1,
+    }
+}
+
+leitura: {
+    {
+        id_leitura: 1,
+    }
+}
+
+livro {
+    {
+        id_livro: 1,
+    }
+}
+
+escrita {
+    {
+        id_escrita: 1,
+    }
+}
+
+comentario {
+    {
+        id_comentarios: 1,
+    }
+}

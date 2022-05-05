@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
+
+.oioi {
+    width: 250px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.capa {
+    width: 140px;
+    height: 200px;
+    border-radius: 5px;
+    border: 1px solid rgb(199, 199, 199);
+    margin: 10%;
+}
+
+.org {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.teste {
+    align-items: center;
+    display: flex;
+}
+
+h4 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leia {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    color: #000
+}
+
+.caps {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cap {
+    display: flex;
+    width: 40%;
+    height: 100%;
+    border: 1px solid rgba(128, 128, 128, 0.479);
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+h5 {
+    margin-top: 7px;
+}
+
+@media (max-width: 600px) {
+    .oioi {
+        width: 250px;
+        height: 40px;
+        border-radius: 5px;
+    }
+
+    .capa {
+        width: 140px;
+        height: 200px;
+        border-radius: 5px;
+        border: 1px solid rgb(199, 199, 199);
+        margin: 10%;
+    }
+
+    .org {
+        display: flex;
+        align-items: center;
+    }
+
+    h4 {
+        font-family: 'Roboto Slab', serif;
+        font-size: 13px;
+        margin-left: -30px;
+        margin-top: -40px;
+    }
+
+    .sin {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sinopse {
+        display: flex;
+        width: 90%;
+        height: 150px;
+        border: 1px solid rgba(128, 128, 128, 0.479);
+        border-radius: 5px;
+    }
+
+    .caps {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .cap {
+        display: flex;
+        width: 90%;
+        height: 650px;
+        border: 1px solid rgba(128, 128, 128, 0.479);
+        border-radius: 5px;
+        margin-top: 30px;
+    }
+
+    h5 {
+        margin-top: 7px;
+    }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velaris - writing</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../global/style.css">
+    <link rel="shortcut icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../assets/velaris.png" class="velaris" alt="Velaris Books">
+
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li class="alinhar"><a href="../home/index.html">HOME</a><img class="img" src="../assets/castle.png"></li>
+                <li class="alinhar"><a href="../perfil/index.html">PROFILE</a><img class="img" src="../assets/profile.png"></li>
+                <!-- <li class="alinhar"><a href="../leitura/index.html">READ</a><img class="img" src="../assets/reading-book.png"></li> -->
+                <li class="alinhar"><a href="../login/index.html" onclick="handleLogoutClick()">LOGOUT</a><img class="img" src="../assets/sair.png">
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="adicionar-livro">
+            <img class="capaLivro" src="" alt="">
+            <div>
+                <img class="upload-cape" src="../assets/camera.png" alt="Camera" id="camera" width="32" onClick="handleClickUpload()">
+                <input type="file" name="imagereader" accept="image/png, image/jpeg" id="book-image" hidden>
+            </div>
+        </div>
+        <div class="meio">
+            <input type="text" id="nome-livro" placeholder="Book Name">
+            <input id="genero" type="text" placeholder="genero"/>
+            <input id="captulo-nome" type="text" placeholder="chapter name"/>
+            <button id ="public">Publicar</button>
+        </div>
+        <div class="meio">
+            <textarea id="texto-captulo"></textarea>
+        </div>
+    </main>
+</body>
+<script src="../global/script.js"></script>
+<script src="./script.js"></script>
+</html>
